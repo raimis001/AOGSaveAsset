@@ -1,5 +1,4 @@
 using UnityEngine;
-using AOGSaveSystem;
 
 namespace AOGSaveSystem
 {
@@ -12,37 +11,38 @@ namespace AOGSaveSystem
 
     public partial struct SaveClass
     {
-        public TestPlayerSaveData playerData;
-    }
-}
-
-public class SaveTestPlayer : MonoBehaviour
-{
-    void OnDataSave()
-    {
-        SaveManager.SaveData.playerData.position = transform.position;
-        SaveManager.SaveData.playerData.rotation = transform.rotation;
+        public TestPlayerSaveData testPlayerData;
     }
 
-    void OnDataLoad()
-    {
-        transform.position = SaveManager.SaveData.playerData.position;
-        transform.rotation = SaveManager.SaveData.playerData.rotation;
-    }
 
-    private void OnEnable()
+    public class SaveTestPlayer : MonoBehaviour
     {
-        SaveManager.BeforeSave += OnDataSave;
-        SaveManager.AfterLoad += OnDataLoad;
-    }
-    private void OnDisable()
-    {
-        SaveManager.BeforeSave -= OnDataSave;
-        SaveManager.AfterLoad -= OnDataLoad;
-    }
+        void OnDataSave()
+        {
+            SaveManager.SaveData.testPlayerData.position = transform.position;
+            SaveManager.SaveData.testPlayerData.rotation = transform.rotation;
+        }
 
-    void Update()
-    {
+        void OnDataLoad()
+        {
+            transform.position = SaveManager.SaveData.testPlayerData.position;
+            transform.rotation = SaveManager.SaveData.testPlayerData.rotation;
+        }
 
+        private void OnEnable()
+        {
+            SaveManager.BeforeSave += OnDataSave;
+            SaveManager.AfterLoad += OnDataLoad;
+        }
+        private void OnDisable()
+        {
+            SaveManager.BeforeSave -= OnDataSave;
+            SaveManager.AfterLoad -= OnDataLoad;
+        }
+
+        void Update()
+        {
+
+        }
     }
 }
