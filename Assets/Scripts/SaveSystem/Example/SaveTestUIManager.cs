@@ -21,7 +21,7 @@ public class SaveTestUIManager : MonoBehaviour
 
     public void SaveBtn()
     {
-        AOGSaveSystem.SaveManager.SaveFileName = "TestSaveFile";
+        AOGSaveSystem.SaveManager.SaveFileName = "TestSaveFile.sav";
         AOGSaveSystem.SaveManager.Save();
     }
 

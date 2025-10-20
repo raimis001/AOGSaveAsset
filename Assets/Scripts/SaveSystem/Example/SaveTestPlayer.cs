@@ -4,7 +4,7 @@ using AOGSaveSystem;
 namespace AOGSaveSystem
 {
     [System.Serializable]
-    public struct PlayerSaveData
+    public struct TestPlayerSaveData
     {
         public Vector3 position;
         public Quaternion rotation;
@@ -12,7 +12,7 @@ namespace AOGSaveSystem
 
     public partial struct SaveClass
     {
-        public PlayerSaveData playerData;
+        public TestPlayerSaveData playerData;
     }
 }
 
