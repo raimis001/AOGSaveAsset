@@ -15,8 +15,10 @@ There is no reason why this asset could not be used by earlier versions of Unity
 
 ## Installation
 
-Add custom Unity package from Git url:
-https://github.com/raimis001/AOGSaveAsset.git?path=/Assets/Scripts/SaveSystem
+Sorry now its not working from custom package, just copy https://github.com/raimis001/AOGSaveAsset/blob/main/Assets/Scripts/SaveSystem/SaveManager.cs to your scripts folder
+
+`Add custom Unity package from Git url:
+`https://github.com/raimis001/AOGSaveAsset.git?path=/Assets/Scripts/SaveSystem
 
 
 ## How to use
