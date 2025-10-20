@@ -1,0 +1,10 @@
+{
+	"name": "com.aog.save_asset",
+	"version": "1.0.0",
+	"displayName": "AOG Save system asset",
+	"author": {
+		"name": "Raimonds Udris",
+		"email": "raimis0001@gmail.com",
+		"url": "https://www.unity3d.com"
+  }
+ }
