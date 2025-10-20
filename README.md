@@ -16,6 +16,7 @@ There is no reason why this asset could not be used by earlier versions of Unity
 ## Installation
 
 Sorry now its not working from custom package, just copy https://github.com/raimis001/AOGSaveAsset/blob/main/Assets/Scripts/SaveSystem/SaveManager.cs to your scripts folder
+unfortunately, this is a pure C# compilation limitation: partial class parts are combined before compilation — and if they already reside in different assemblies (as happens with a Unity package), the compiler simply no longer sees them as a single unit.
 
 `Add custom Unity package from Git url:
 `https://github.com/raimis001/AOGSaveAsset.git?path=/Assets/Scripts/SaveSystem
